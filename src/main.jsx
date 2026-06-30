@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { motion } from 'framer-motion';
 import {
   ArrowDown,
@@ -542,6 +544,8 @@ function App() {
         <Contact />
       </main>
       <footer className="site-footer">© 2026 William Ammari. Portfolio review only. All rights reserved.</footer>
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
