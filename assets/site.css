@@ -131,6 +131,11 @@ a { color: inherit; text-decoration: none; }
   font-weight: 800;
 }
 .theme-toggle:hover, .nav-github:hover, .menu-button:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--blue) 45%, var(--line)); }
+.theme-icon { width: 19px; height: 19px; fill: currentColor; pointer-events: none; }
+.theme-icon-moon { display: inline-block; }
+.theme-icon-sun { display: none; }
+html[data-theme='dark'] .theme-icon-moon { display: none; }
+html[data-theme='dark'] .theme-icon-sun { display: inline-block; }
 .menu-button { display: none; }
 .mobile-panel { display: none; }
 
@@ -261,6 +266,7 @@ a { color: inherit; text-decoration: none; }
   transition: 0.2s ease; color: var(--text);
 }
 .social-row a:hover { transform: translateY(-3px); color: var(--blue); border-color: color-mix(in srgb, var(--blue) 45%, var(--line)); }
+.social-icon { width: 20px; height: 20px; fill: currentColor; pointer-events: none; }
 
 .hero-visual { justify-self: end; width: min(100%, 430px); }
 .profile-card {
@@ -617,7 +623,6 @@ ul { margin: 1rem 0; padding-left: 1.1rem; color: var(--muted); line-height: 1.7
   background: var(--chip);
   font-size: 0.72rem;
 }
-.social-row a { font-size: 0.74rem; font-weight: 900; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
