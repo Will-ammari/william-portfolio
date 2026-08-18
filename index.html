@@ -1,16 +1,213 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="William Ammari - Backend Engineer specializing in Laravel/PHP, SaaS systems, REST APIs, API integrations, and business automation."
-    />
+    <meta name="theme-color" content="#070b16" />
+    <meta name="description" content="William Ammari — Backend Engineer specializing in Laravel/PHP, SaaS systems, REST APIs, API integrations, and business automation. Case studies include production academic and OTP/messaging platforms plus public backend projects." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="William Ammari | Backend Engineer · Laravel/PHP · SaaS & APIs" />
+    <meta property="og:description" content="Backend Engineer specializing in Laravel/PHP, SaaS systems, REST APIs, API integrations, and production business workflows." />
+    <meta property="og:url" content="https://will-ammari.netlify.app/" />
+    <meta property="og:image" content="https://will-ammari.netlify.app/profile.jpg" />
+    <meta property="og:image:alt" content="William Ammari — Backend Engineer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="William Ammari | Backend Engineer" />
+    <meta name="twitter:description" content="Laravel/PHP · SaaS Systems · REST APIs · API Integrations" />
+    <meta name="twitter:image" content="https://will-ammari.netlify.app/profile.jpg" />
+    <link rel="canonical" href="https://will-ammari.netlify.app/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/site.css" />
     <title>William Ammari | Backend Engineer · Laravel/PHP · SaaS & APIs</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Person","name":"William Ammari","url":"https://will-ammari.netlify.app/","image":"https://will-ammari.netlify.app/profile.jpg","jobTitle":"Backend Engineer","email":"mailto:will.ammari007@gmail.com","sameAs":["https://github.com/Will-ammari","https://www.linkedin.com/in/william-ammari"],"knowsAbout":["Laravel","PHP","SaaS systems","REST APIs","API integrations","MySQL","Redis","Docker","Webhooks","Background jobs"]}
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="scroll-progress" style="transform:scaleX(0)"></div>
+        <nav class="nav-shell" aria-label="Main navigation">
+          <a href="#home" class="brand">
+            <span class="brand-mark">WA</span>
+            <span><strong>William Ammari</strong><small>Backend Engineering</small></span>
+          </a>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#case-studies">Case Studies</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle theme">☀</button>
+            <a class="nav-github" href="https://github.com/Will-ammari" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <button class="menu-button" type="button" aria-label="Toggle menu" aria-expanded="false">☰</button>
+          </div>
+        </nav>
+        <div class="mobile-panel" hidden>
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#case-studies">Case Studies</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+        </div>
+      </header>
+
+      <main>
+        <section id="home" class="hero-section">
+          <div class="hero-bg-grid"></div><div class="hero-gradient hero-gradient-one"></div><div class="hero-gradient hero-gradient-two"></div>
+          <div class="hero-shell">
+            <div class="hero-copy">
+              <div class="availability"><span></span> Open to Germany/EU backend roles + selected independent projects</div>
+              <h1><span class="hero-greeting">Hi, I'm</span><span class="hero-name">William Ammari</span></h1>
+              <h2>Backend Engineer</h2>
+              <div class="hero-specialties">Laravel / PHP · SaaS Systems · REST APIs · API Integrations</div>
+              <p>I build production-oriented Laravel backends, SaaS systems, REST APIs, and integrations for real business workflows.</p>
+              <div class="hero-actions">
+                <a class="btn primary" href="#case-studies">View Case Studies ↓</a>
+                <a class="btn secondary" href="#contact">Get in Touch ↗</a>
+              </div>
+              <a class="hero-cv-link" href="/William-Ammari-CV.pdf" download>Download CV</a>
+              <div class="social-row" aria-label="Social links">
+                <a href="mailto:will.ammari007@gmail.com" aria-label="Email">@</a>
+                <a href="https://www.linkedin.com/in/william-ammari" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+                <a href="https://github.com/Will-ammari" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <div class="profile-card">
+                <div class="photo-ring"><img src="/profile.jpg" alt="William Ammari" /></div>
+                <div class="profile-content">
+                  <span class="eyebrow">portfolio.sh</span>
+                  <h3>Backend engineering for SaaS, APIs & integrations</h3>
+                  <div class="terminal-line">$ stack --primary</div>
+                  <div class="stack-pills"><span>Laravel</span><span>PHP</span><span>REST APIs</span><span>MySQL</span><span>Redis</span><span>Docker</span></div>
+                  <div class="terminal-card"><strong>ProcurePilot AI</strong><small>101 tests / 367 assertions · SaaS procurement backend</small></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stats-bar">
+            <div class="stat-card"><strong>3</strong><span>Detailed case studies</span></div>
+            <div class="stat-card"><strong>101</strong><span>Tests in ProcurePilot</span></div>
+            <div class="stat-card"><strong>B2</strong><span>English</span></div>
+            <div class="stat-card"><strong>A1</strong><span>German · learning</span></div>
+          </div>
+          <a class="scroll-cue" href="#about" aria-label="Scroll to About">↓</a>
+        </section>
+
+        <section id="about" class="section-shell about-grid">
+          <div class="section-heading"><span>About</span><h2>Backend engineering for real business workflows</h2><p>I build Laravel backends and APIs that are secure, maintainable, tested, documented, and designed around real operational needs.</p></div>
+          <div class="about-card">
+            <p>I am a backend engineer specializing in Laravel/PHP, SaaS systems, REST APIs, and integrations. My work focuses on turning business workflows into maintainable backend services with careful attention to authorization, data integrity, concurrency, and production behavior.</p>
+            <p>My work spans production academic and messaging platforms alongside public SaaS portfolio projects, with experience across queues, webhooks, payments, private files, Docker, CI, automated tests, and API documentation.</p>
+          </div>
+          <div class="strength-card">
+            <div><span class="check-icon">✓</span><span>Clean Laravel architecture and API-first backend design</span></div>
+            <div><span class="check-icon">✓</span><span>Authorization, tenant/scoped access, validation, and auditability</span></div>
+            <div><span class="check-icon">✓</span><span>Transactions, concurrency controls, queues, and background jobs</span></div>
+            <div><span class="check-icon">✓</span><span>Webhooks, payments, third-party integrations, testing, and API documentation</span></div>
+          </div>
+        </section>
+
+        <section id="experience" class="section-shell">
+          <div class="section-heading"><span>Experience</span><h2>Production backend ownership and integrations</h2><p>Professional and independent work across Laravel APIs, authorization, transactional workflows, queues, webhooks, payments, testing, and third-party integrations.</p></div>
+          <div class="timeline">
+            <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-top"><div><h3>Backend Developer</h3><p>Nobalaa.Co · Damascus, Syria</p></div><span>03/2024 - Current</span></div><ul><li>Own and develop Laravel backend systems and REST APIs for production web and mobile applications.</li><li>Implement authorization, transactional workflows, concurrency controls, queues, and webhooks for business-critical operations.</li><li>Integrate payments and third-party services, backed by automated testing, API documentation, and maintainable code organization.</li></ul><div class="tag-row"><span>Laravel</span><span>PHP</span><span>REST APIs</span><span>MySQL</span><span>Queues</span><span>Webhooks</span><span>Payments</span></div></div></article>
+            <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-top"><div><h3>Backend Developer</h3><p>Freelance · Remote / Damascus, Syria</p></div><span>06/2025 - 12/2025</span></div><ul><li>Built backend APIs for operations and order management.</li><li>Integrated backend services with existing database structures and business workflows.</li><li>Tested and documented backend services for maintainability and handoff.</li></ul><div class="tag-row"><span>Backend APIs</span><span>Databases</span><span>Integrations</span><span>Documentation</span></div></div></article>
+            <article class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="timeline-top"><div><h3>AI Automation Developer</h3><p>Freelance · Remote / Damascus, Syria</p></div><span>08/2024 - 01/2025</span></div><ul><li>Designed customer-support automation workflows using n8n and webhooks.</li><li>Worked on Instagram and WhatsApp message automation logic.</li><li>Prepared AI-assisted workflows for customer replies and purchase support.</li></ul><div class="tag-row"><span>n8n</span><span>Webhooks</span><span>API Integrations</span><span>Automation</span></div></div></article>
+          </div>
+        </section>
+
+        <section id="case-studies" class="section-shell">
+          <div class="section-heading"><span>Case Studies</span><h2>Backend work beyond feature lists</h2><p>Three projects showing how I approach authorization, workflow integrity, integrations, concurrency, async processing, and production constraints. Proprietary work is described at an architecture level only.</p></div>
+          <div class="case-study-list">
+            <article class="case-study-card emerald">
+              <div class="case-study-header"><div><span class="project-type">Production · Proprietary</span><h3>Holol Academy</h3><p class="project-domain">Academic operations & learning platform</p></div><span class="private-badge">🔒 Private source</span></div>
+              <p class="case-summary">Bilingual Laravel platform spanning the public site, admissions, academic administration, learning delivery, assignments, student submissions, evaluations, and academic records.</p>
+              <div class="case-study-body">
+                <div class="case-challenge"><span>Engineering challenge</span><p>The backend needed to preserve academic scope and historical integrity across several roles while handling private files, deadline-driven workflows, resubmissions, and reliable notifications.</p></div>
+                <div class="case-engineering"><span>Backend work</span><ul><li>Permission + Program/Cohort scope enforcement across Super Admin, Sub Admin, and Student workflows.</li><li>Versioned submission cycles and append-only evaluation release protected by database transactions and row locks.</li><li>Queue- and scheduler-driven deadline, missing-document, late, Retake, and result notifications with idempotent delivery recovery.</li><li>Private file streaming, controlled academic records, exports, integrity checks, pagination, and query-level performance hardening.</li></ul></div>
+              </div>
+              <div class="case-evidence"><span>✓ Scoped authorization</span><span>✓ Transactions + row locks</span><span>✓ Queues + scheduler</span><span>✓ Private file storage</span><span>✓ Versioned records</span><span>✓ Automated tests</span></div>
+              <div class="tag-row case-tech"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Queues</span><span>Scheduler</span><span>Private Storage</span><span>PHPUnit</span></div>
+              <p class="case-note">🔒 Proprietary production project — implementation details are presented at an architecture level.</p>
+            </article>
+
+            <article class="case-study-card cyan">
+              <div class="case-study-header"><div><span class="project-type">Production · Collaborative</span><h3>Arsltek OTP Bridge</h3><p class="project-domain">OTP, WhatsApp messaging & client billing platform</p></div><span class="private-badge">🔒 Private source</span></div>
+              <p class="case-summary">Laravel backend that exposes client APIs and a client portal for OTP delivery, WhatsApp Cloud/OpenClaw gateways, bulk template messaging, package usage, provisioning, payments, and delivery status tracking.</p>
+              <div class="case-study-body">
+                <div class="case-challenge"><span>Engineering challenge</span><p>Messaging and billing state had to stay consistent while multiple clients, gateways, webhooks, quotas, payment callbacks, and asynchronous delivery processes were operating at the same time.</p></div>
+                <div class="case-engineering"><span>Backend work</span><ul><li>Bridge-token authentication, client IP allowlists, API throttling, locale-aware client APIs, and isolated billing integration endpoints.</li><li>WhatsApp Cloud webhooks and provider status reconciliation, plus gateway abstraction for Meta Cloud and OpenClaw delivery paths.</li><li>Transactional package/free-trial usage accounting and payment state changes with row locking for concurrency safety.</li><li>Queued OTP/push delivery, bulk template messaging, client provisioning, package subscriptions, PayPal/Paymera/manual payment flows, and operational statistics.</li></ul></div>
+              </div>
+              <div class="case-evidence"><span>✓ API authentication</span><span>✓ IP allowlists + throttling</span><span>✓ Webhook reconciliation</span><span>✓ Transactions + row locks</span><span>✓ Queued delivery</span><span>✓ Payments + packages</span></div>
+              <div class="tag-row case-tech"><span>Laravel 12</span><span>PHP</span><span>Sanctum</span><span>MySQL</span><span>Queues</span><span>WhatsApp Cloud</span><span>Webhooks</span><span>Payments</span></div>
+              <p class="case-note">🔒 Proprietary collaborative production project — no private source code is published.</p>
+            </article>
+
+            <article class="case-study-card violet">
+              <div class="case-study-header"><div><span class="project-type">Independent Flagship · Public</span><h3>ProcurePilot AI</h3><p class="project-domain">Multi-tenant procurement SaaS backend</p></div><a class="case-link" href="https://github.com/Will-ammari/procurepilot-ai" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+              <p class="case-summary">API-first Laravel backend for purchase requests, supplier quotes, AI-assisted quote analysis, approvals, invoices, VAT, scorecards, audit logs, and attachments.</p>
+              <div class="case-study-body">
+                <div class="case-challenge"><span>Engineering challenge</span><p>The system needed tenant-safe procurement workflows, consistent approval and purchasing state, reliable background processing, and a clean boundary between Laravel business logic and the AI analysis service.</p></div>
+                <div class="case-engineering"><span>Backend work</span><ul><li>Multi-tenant scoping, policies, Sanctum authentication, service-layer business logic, and auditable procurement state transitions.</li><li>Database transactions and concurrency controls around critical workflow operations, plus queues and background jobs for asynchronous work.</li><li>FastAPI integration for AI-assisted analysis behind a Laravel-owned domain model rather than placing core business rules in the AI service.</li><li>Dockerized local environment, Redis, CI, PHPStan/Larastan, OpenAPI/Postman documentation, health monitoring, and a broad automated test suite.</li></ul></div>
+              </div>
+              <div class="case-evidence"><span>✓ 101 tests</span><span>✓ 367 assertions</span><span>✓ PHPStan/Larastan clean</span><span>✓ Docker + Redis</span><span>✓ CI</span><span>✓ OpenAPI docs</span></div>
+              <div class="tag-row case-tech"><span>Laravel</span><span>PHP 8.3</span><span>Sanctum</span><span>MySQL</span><span>Redis</span><span>FastAPI</span><span>Docker</span><span>GitHub Actions</span></div>
+              <p class="case-note">Public portfolio project with implementation and documentation available on GitHub.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="services" class="section-shell">
+          <div class="section-heading"><span>WAMM</span><h2>Independent backend services</h2><p>WAMM is my independent engineering brand: Backend Engineering · API Integrations · Business Automation. I take on selected projects where backend reliability and clear ownership matter.</p></div>
+          <div class="services-grid">
+            <article class="service-card"><div class="service-icon">⚙</div><h3>SaaS & Backend Development</h3><p>Laravel/PHP backends, REST APIs, authentication, authorization, multi-tenant workflows, databases, queues, and production-ready business logic.</p></article>
+            <article class="service-card"><div class="service-icon">↔</div><h3>API Integrations</h3><p>Payments, messaging providers, webhooks, third-party APIs, reliable callback handling, retries, status synchronization, and integration documentation.</p></article>
+            <article class="service-card"><div class="service-icon">✦</div><h3>Business Automation</h3><p>Background jobs, workflow automation, n8n or AI-assisted integrations, and backend orchestration that removes repetitive operational work.</p></article>
+          </div>
+        </section>
+
+        <section id="projects" class="section-shell">
+          <div class="section-heading"><span>Public Projects</span><h2>Additional backend projects</h2><p>Two public GitHub projects that reinforce the same backend-first focus across healthcare operations and workflow risk analysis.</p></div>
+          <div class="projects-grid projects-grid-two">
+            <article class="project-card emerald"><div class="project-top"><div><span class="project-type">Healthcare Operations API</span><h3>KlinikLedger</h3><p class="project-domain">Clinic and practice management backend</p></div><a href="https://github.com/Will-ammari/klinikledger" target="_blank" rel="noreferrer" aria-label="KlinikLedger GitHub">GH</a></div><p>Clinic-scoped Laravel API for doctors, patients, appointments, working hours, invoices, consents, treatment notes, exports, anonymization, and audit trails.</p><div class="impact-box">Sensitive-domain backend engineering with scheduling rules, scoped access control, privacy-aware workflows, request tracing, health checks, and documented APIs.</div><div class="metric-row"><span>58 tests</span><span>213 assertions</span><span>PHPStan + CI</span></div><div class="tag-row"><span>Laravel</span><span>Sanctum</span><span>MySQL</span><span>Redis</span><span>Docker</span><span>PHPUnit</span></div></article>
+            <article class="project-card violet"><div class="project-top"><div><span class="project-type">Workflow Risk Platform</span><h3>FlowGuard AI</h3><p class="project-domain">AI automation risk analysis and engineering controls</p></div><a href="https://github.com/Will-ammari/flowguard-ai" target="_blank" rel="noreferrer" aria-label="FlowGuard GitHub">GH</a></div><p>Laravel MVP for mapping AI-powered automation workflows, identifying risk points, scoring findings, and generating structured risk reports.</p><div class="impact-box">Connects backend engineering with AI governance thinking through human review, data handling, fallback paths, audit logs, and external API exposure.</div><div class="metric-row"><span>Risk engine</span><span>Reports</span><span>Audit logs</span></div><div class="tag-row"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Blade</span><span>PHPUnit</span></div></article>
+          </div>
+        </section>
+
+        <section id="skills" class="section-shell">
+          <div class="section-heading"><span>Skills</span><h2>Technical stack</h2><p>A backend-first stack for Laravel SaaS systems, secure APIs, transactional workflows, integrations, testing, and production delivery.</p></div>
+          <div class="skills-grid">
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">{ }</span><h3>Backend</h3></div><div class="tag-row"><span>PHP</span><span>Laravel</span><span>REST APIs</span><span>MVC</span><span>Service Layer</span><span>Form Requests</span><span>Policies</span></div></article>
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">✓</span><h3>SaaS & Security</h3></div><div class="tag-row"><span>Sanctum</span><span>RBAC</span><span>Multi-Tenant Scoping</span><span>Authorization</span><span>Audit Logs</span><span>Validation</span></div></article>
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">DB</span><h3>Database & DevOps</h3></div><div class="tag-row"><span>MySQL</span><span>SQL Server</span><span>Eloquent ORM</span><span>Redis</span><span>Docker</span><span>GitHub Actions</span></div></article>
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">↻</span><h3>Production Workflows</h3></div><div class="tag-row"><span>Transactions</span><span>Row Locking</span><span>Queues</span><span>Background Jobs</span><span>Webhooks</span><span>Payments</span></div></article>
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">↔</span><h3>Integrations & Automation</h3></div><div class="tag-row"><span>API Integrations</span><span>FastAPI</span><span>Python</span><span>n8n</span><span>WhatsApp APIs</span><span>AI-assisted Features</span></div></article>
+            <article class="skill-card"><div class="skill-head"><span class="skill-icon">T</span><h3>Testing & Docs</h3></div><div class="tag-row"><span>PHPUnit</span><span>Feature Tests</span><span>Postman</span><span>OpenAPI</span><span>PHPStan / Larastan</span><span>Documentation</span></div></article>
+          </div>
+        </section>
+
+        <section id="education" class="section-shell education-grid">
+          <div class="section-heading"><span>Education</span><h2>Computer engineering and AI foundation</h2><p>Academic foundation in AI with practical backend engineering and self-driven project building.</p></div>
+          <article class="education-card"><span>2021 - 2025</span><h3>B.Sc. in Computer Engineering - AI Department</h3><strong>University of Damascus</strong><p>Foundation in artificial intelligence, software engineering, data, and backend-oriented project work.</p></article>
+          <article class="education-card"><span>2023 - 2024</span><h3>Courses</h3><strong>AI, ML, Deep Learning, Data Analysis, TOEFL</strong><p>Continued learning in machine learning, deep learning, data analysis, and English communication.</p></article>
+          <div class="language-card"><h3>Languages</h3><div class="language-row"><div><strong>Arabic</strong><span>Native</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="language-row"><div><strong>English</strong><span>B2</span></div><div class="bar"><i style="width:78%"></i></div></div><div class="language-row"><div><strong>German</strong><span>A1 - actively learning</span></div><div class="bar"><i style="width:25%"></i></div></div></div>
+        </section>
+
+        <section id="contact" class="contact-section">
+          <div class="contact-shell">
+            <span class="contact-eyebrow">Contact</span><h2>Let's talk backend engineering.</h2>
+            <p>I am open to Backend Engineering roles in Germany/EU and selected independent projects involving Laravel, SaaS backends, REST APIs, integrations, and business automation.</p>
+            <div class="contact-paths"><span>💼 Germany/EU backend roles</span><span>✉ WAMM independent projects</span></div>
+            <div class="contact-actions"><a class="btn primary" href="mailto:will.ammari007@gmail.com">Email Me</a><a class="btn secondary" href="https://www.linkedin.com/in/william-ammari" target="_blank" rel="noreferrer">LinkedIn</a><a class="btn secondary" href="https://github.com/Will-ammari" target="_blank" rel="noreferrer">GitHub</a></div>
+            <div class="location">⌖ Damascus, Syria · Open to Germany/EU backend opportunities</div>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">© 2026 William Ammari · WAMM — Backend Engineering · API Integrations · Business Automation.</footer>
+    </div>
+    <script src="/assets/site.js" defer></script>
   </body>
 </html>
