@@ -1,0 +1,16 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/William-Ammari-CV.pdf"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, max-age=0"
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment; filename=William-Ammari-CV.pdf"
+
+[[headers]]
+  for = "/William-Ammari-CV-2026-08-FINAL.pdf"
+  [headers.values]
+    Cache-Control = "no-store, no-cache, must-revalidate, max-age=0"
+    Content-Type = "application/pdf"
+    Content-Disposition = "attachment; filename=William-Ammari-CV.pdf"

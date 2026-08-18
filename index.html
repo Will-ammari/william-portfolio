@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://will-ammari.netlify.app/profile.jpg" />
     <link rel="canonical" href="https://will-ammari.netlify.app/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/assets/site.css" />
+    <link rel="stylesheet" href="/assets/site-final.css" />
     <title>William Ammari | Backend Engineer · Laravel/PHP · SaaS & APIs</title>
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"Person","name":"William Ammari","url":"https://will-ammari.netlify.app/","image":"https://will-ammari.netlify.app/profile.jpg","jobTitle":"Backend Engineer","email":"mailto:will.ammari007@gmail.com","sameAs":["https://github.com/Will-ammari","https://www.linkedin.com/in/william-ammari"],"knowsAbout":["Laravel","PHP","SaaS systems","REST APIs","API integrations","MySQL","Redis","Docker","Webhooks","Background jobs"]}
@@ -43,7 +43,7 @@
             <a href="#contact">Contact</a>
           </div>
           <div class="nav-actions">
-            <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+            <button class="theme-toggle" type="button" aria-label="Switch to light mode" title="Switch to light mode" onclick="window.toggleTheme()">
               <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 17.5a1 1 0 0 1-1-1v-1.5a1 1 0 1 1 2 0V21a1 1 0 0 1-1 1ZM4.5 13H3a1 1 0 1 1 0-2h1.5a1 1 0 1 1 0 2Zm16.5 0h-1.5a1 1 0 1 1 0-2H21a1 1 0 1 1 0 2ZM6.7 7.7a1 1 0 0 1-.71-.29L4.93 6.35a1 1 0 1 1 1.42-1.42l1.06 1.06A1 1 0 0 1 6.7 7.7Zm12.37 12.37a1 1 0 0 1-.71-.29l-1.06-1.06a1 1 0 1 1 1.42-1.42l1.06 1.06a1 1 0 0 1-.71 1.71ZM5.64 20.07a1 1 0 0 1-.71-1.71l1.06-1.06a1 1 0 1 1 1.42 1.42l-1.06 1.06a1 1 0 0 1-.71.29ZM18 7.7a1 1 0 0 1-.7-1.71l1.06-1.06a1 1 0 0 1 1.42 1.42l-1.06 1.06a1 1 0 0 1-.72.29ZM12 17.25A5.25 5.25 0 1 1 12 6.75a5.25 5.25 0 0 1 0 10.5Zm0-8.5a3.25 3.25 0 1 0 0 6.5 3.25 3.25 0 0 0 0-6.5Z"/></svg>
               <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.2a8.4 8.4 0 0 1-11.3-11.3A9.5 9.5 0 1 0 20.1 15.2Zm-8.1 5.3A7.5 7.5 0 0 1 6.57 7.83a10.4 10.4 0 0 0 9.6 9.6A7.47 7.47 0 0 1 12 20.5Z"/></svg>
             </button>
@@ -70,7 +70,7 @@
                 <a class="btn primary" href="#case-studies">View Case Studies ↓</a>
                 <a class="btn secondary" href="#contact">Get in Touch ↗</a>
               </div>
-              <a class="hero-cv-link" href="/William-Ammari-CV-2026-08.pdf" download="William-Ammari-CV.pdf">Download CV</a>
+              <a class="hero-cv-link" href="./William-Ammari-CV-2026-08-FINAL.pdf" download="William-Ammari-CV.pdf">Download CV</a>
               <div class="social-row" aria-label="Social links">
                 <a href="mailto:will.ammari007@gmail.com" aria-label="Email" title="Email">
                   <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.1L3.7 7H3v.8l9 5.55 9-5.55V7h-.7L12 12.1Z"/></svg>
@@ -144,8 +144,8 @@
             </article>
 
             <article class="case-study-card cyan">
-              <div class="case-study-header"><div><span class="project-type">Production · Collaborative</span><h3>Arsltek OTP Bridge</h3><p class="project-domain">OTP, WhatsApp messaging & client billing platform</p></div><span class="private-badge">🔒 Private source</span></div>
-              <p class="case-summary">Laravel backend that exposes client APIs and a client portal for OTP delivery, WhatsApp Cloud/OpenClaw gateways, bulk template messaging, package usage, provisioning, payments, and delivery status tracking.</p>
+              <div class="case-study-header"><div><span class="project-type">Production · Collaborative</span><h3>Arsltek</h3><p class="project-domain">OTP, WhatsApp messaging & client billing platform</p></div><span class="private-badge">🔒 Private source</span></div>
+              <p class="case-summary">Laravel backend that exposes client APIs and a client portal for OTP delivery, WhatsApp Cloud, bulk template messaging, package usage, payments, and delivery status tracking.</p>
               <div class="case-study-body">
                 <div class="case-challenge"><span>Engineering challenge</span><p>Messaging and billing state had to stay consistent while multiple clients, gateways, webhooks, quotas, payment callbacks, and asynchronous delivery processes were operating at the same time.</p></div>
                 <div class="case-engineering"><span>Backend work</span><ul><li>Bridge-token authentication, client IP allowlists, API throttling, locale-aware client APIs, and isolated billing integration endpoints.</li><li>WhatsApp Cloud webhooks and provider status reconciliation, plus gateway abstraction for Meta Cloud and OpenClaw delivery paths.</li><li>Transactional package/free-trial usage accounting and payment state changes with row locking for concurrency safety.</li><li>Queued OTP/push delivery, bulk template messaging, client provisioning, package subscriptions, PayPal/Paymera/manual payment flows, and operational statistics.</li></ul></div>
@@ -230,6 +230,79 @@
       </main>
       <footer class="site-footer">© 2026 William Ammari · WAMM — Backend Engineering · API Integrations · Business Automation.</footer>
     </div>
-    <script src="/assets/site.js" defer></script>
+    <script>
+      (() => {
+        const html = document.documentElement;
+        const themeButton = document.querySelector('.theme-toggle');
+        const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+        const menuButton = document.querySelector('.menu-button');
+        const mobilePanel = document.querySelector('.mobile-panel');
+        const progress = document.querySelector('.scroll-progress');
+        const navLinks = [...document.querySelectorAll('.nav-links a')];
+        const sectionLinks = navLinks
+          .map((link) => ({ link, el: document.querySelector(link.getAttribute('href')) }))
+          .filter((item) => item.el);
+
+        const readSavedTheme = () => {
+          try {
+            const value = localStorage.getItem('theme');
+            return value === 'light' || value === 'dark' ? value : null;
+          } catch (_) {
+            return null;
+          }
+        };
+
+        const saveTheme = (theme) => {
+          try { localStorage.setItem('theme', theme); } catch (_) {}
+        };
+
+        const applyTheme = (theme, persist = false) => {
+          const nextTheme = theme === 'light' ? 'light' : 'dark';
+          html.setAttribute('data-theme', nextTheme);
+          if (themeColorMeta) {
+            themeColorMeta.setAttribute('content', nextTheme === 'dark' ? '#070b16' : '#f4f8fd');
+          }
+          if (themeButton) {
+            const target = nextTheme === 'dark' ? 'light' : 'dark';
+            themeButton.setAttribute('aria-label', `Switch to ${target} mode`);
+            themeButton.setAttribute('title', `Switch to ${target} mode`);
+            themeButton.setAttribute('aria-pressed', String(nextTheme === 'light'));
+          }
+          if (persist) saveTheme(nextTheme);
+        };
+
+        window.toggleTheme = () => {
+          const current = html.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+          applyTheme(current === 'dark' ? 'light' : 'dark', true);
+        };
+
+        applyTheme(readSavedTheme() || 'dark');
+
+        menuButton?.addEventListener('click', () => {
+          const isOpen = mobilePanel && !mobilePanel.hidden;
+          if (mobilePanel) mobilePanel.hidden = isOpen;
+          menuButton.setAttribute('aria-expanded', String(!isOpen));
+          menuButton.textContent = isOpen ? '☰' : '×';
+        });
+
+        mobilePanel?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+          mobilePanel.hidden = true;
+          menuButton?.setAttribute('aria-expanded', 'false');
+          if (menuButton) menuButton.textContent = '☰';
+        }));
+
+        const onScroll = () => {
+          const total = document.documentElement.scrollHeight - window.innerHeight;
+          if (progress) progress.style.transform = `scaleX(${total > 0 ? window.scrollY / total : 0})`;
+          let current = sectionLinks[0];
+          sectionLinks.forEach((item) => {
+            if (item.el.getBoundingClientRect().top <= 130) current = item;
+          });
+          navLinks.forEach((link) => link.classList.toggle('active', current?.link === link));
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+      })();
+    </script>
   </body>
 </html>
