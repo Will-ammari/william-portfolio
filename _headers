@@ -3,3 +3,9 @@
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/William-Ammari-CV.pdf
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/William-Ammari-CV-2026-08.pdf
+  Cache-Control: public, max-age=31536000, immutable
