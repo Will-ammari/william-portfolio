@@ -10,7 +10,6 @@ import {
   CheckCircle2,
   Code2,
   Database,
-  Download,
   Mail,
   MapPin,
   Menu,
@@ -44,8 +43,8 @@ function LinkedinIcon({ size = 20 }) {
 const personalInfo = {
   name: 'William Ammari',
   initials: 'WA',
-  role: 'Laravel Backend Developer & AI Integration Engineer',
-  headline: 'Building clean SaaS APIs, automation workflows, and AI-assisted business systems.',
+  role: 'Backend Engineer',
+  headline: 'I build production-oriented Laravel backends, SaaS systems, REST APIs, and integrations for real business workflows.',
   location: 'Damascus, Syria | Open to remote backend roles in Germany and Europe',
   email: 'will.ammari007@gmail.com',
   github: 'https://github.com/Will-ammari',
@@ -64,13 +63,6 @@ const navItems = [
   { label: 'Contact', href: '#contact' },
 ];
 
-const typeLines = [
-  'Laravel Backend Developer',
-  'AI Integration Engineer',
-  'SaaS API Builder',
-  'Automation Workflow Developer',
-];
-
 const socials = [
   { label: 'Email', icon: Mail, href: `mailto:${personalInfo.email}` },
   { label: 'LinkedIn', icon: LinkedinIcon, href: personalInfo.linkedin },
@@ -79,7 +71,7 @@ const socials = [
 
 const stats = [
   { value: '3', label: 'Flagship projects' },
-  { value: '86+', label: 'Tests in flagship API' },
+  { value: '101+', label: 'Tests in flagship API' },
   { value: 'B2', label: 'English' },
   { value: 'A1', label: 'German learning' },
 ];
@@ -93,7 +85,7 @@ const projects = [
       'Production-style Laravel backend for AI-assisted procurement management: purchase requests, supplier quotes, quote analysis, comparison, approvals, invoices, VAT, scorecards, audit logs, and attachments.',
     impact: 'Built as a complete API-first SaaS backend with clean MVC, service layer, policies, Docker, CI, OpenAPI, Postman, and FastAPI integration.',
     tech: ['Laravel', 'PHP 8.3', 'Sanctum', 'MySQL', 'FastAPI', 'Docker', 'CI'],
-    metrics: ['86 tests', '303 assertions', 'OpenAPI docs'],
+    metrics: ['101 tests', '367 assertions', 'OpenAPI docs'],
     github: 'https://github.com/Will-ammari/procurepilot-ai',
     accent: 'cyan',
   },
@@ -197,39 +189,6 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-function useTypewriter(words) {
-  const [wordIndex, setWordIndex] = useState(0);
-  const [text, setText] = useState('');
-  const [deleting, setDeleting] = useState(false);
-
-  useEffect(() => {
-    const current = words[wordIndex];
-    const speed = deleting ? 26 : 48;
-    const pause = text === current && !deleting ? 1100 : 0;
-
-    const timeout = setTimeout(() => {
-      if (!deleting && text.length < current.length) {
-        setText(current.slice(0, text.length + 1));
-        return;
-      }
-      if (!deleting && text.length === current.length) {
-        setDeleting(true);
-        return;
-      }
-      if (deleting && text.length > 0) {
-        setText(current.slice(0, text.length - 1));
-        return;
-      }
-      setDeleting(false);
-      setWordIndex((index) => (index + 1) % words.length);
-    }, speed + pause);
-
-    return () => clearTimeout(timeout);
-  }, [deleting, text, wordIndex, words]);
-
-  return text;
-}
-
 function Header({ theme, setTheme }) {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState('Home');
@@ -298,8 +257,6 @@ function Header({ theme, setTheme }) {
 }
 
 function Hero() {
-  const typed = useTypewriter(typeLines);
-
   return (
     <section id="home" className="hero-section">
       <div className="hero-bg-grid" />
@@ -308,21 +265,24 @@ function Hero() {
 
       <div className="hero-shell">
         <motion.div className="hero-copy" initial="hidden" animate="visible" variants={fadeUp} transition={{ duration: 0.55 }}>
-          <div className="availability"><span /> Open to backend, Laravel, AI integration, and automation roles</div>
+          <div className="availability"><span /> Open to Backend Engineering roles in Germany/EU + selected independent projects</div>
           <h1>
             Hi, I'm <span>William Ammari</span>
           </h1>
-          <h2>{typed}<b>|</b></h2>
+          <h2>Backend Engineer</h2>
+          <div className="hero-specialties">Laravel / PHP · SaaS Systems · REST APIs · API Integrations</div>
           <p>{personalInfo.headline}</p>
 
           <div className="hero-actions">
-            <a className="btn primary" href={personalInfo.cv} download>
-              <Download size={18} /> Download CV
+            <a className="btn primary" href="#projects">
+              View Backend Work <ArrowDown size={18} />
             </a>
             <a className="btn secondary" href="#contact">
               Get in Touch <ArrowUpRight size={18} />
             </a>
           </div>
+
+          <a className="hero-cv-link" href={personalInfo.cv} download>Download CV</a>
 
           <div className="social-row" aria-label="Social links">
             {socials.map((social) => (
@@ -340,14 +300,14 @@ function Hero() {
             </div>
             <div className="profile-content">
               <span className="eyebrow">portfolio.sh</span>
-              <h3>Backend engineer with AI integration focus</h3>
+              <h3>Backend engineering for SaaS, APIs & integrations</h3>
               <div className="terminal-line">$ stack --primary</div>
               <div className="stack-pills">
-                {['Laravel', 'FastAPI', 'Docker', 'MySQL', 'CI', 'OpenAPI'].map((item) => <span key={item}>{item}</span>)}
+                {['Laravel', 'PHP', 'REST APIs', 'MySQL', 'Redis', 'Docker'].map((item) => <span key={item}>{item}</span>)}
               </div>
               <div className="terminal-card">
                 <strong>ProcurePilot AI</strong>
-                <small>86 tests / 303 assertions · SaaS procurement backend</small>
+                <small>101 tests / 367 assertions · SaaS procurement backend</small>
               </div>
             </div>
           </div>
